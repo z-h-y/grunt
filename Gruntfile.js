@@ -5,11 +5,11 @@ module.exports = function(grunt) {
 		uglify: {
 			options: {
 				stripBanners: true,
-				banner: '/* <%-pkg.name%>-<%pkg.version%>.js <%- grunt.template.today("yyyy-mm-dd") %> */\n'
+				banner: '/* <%-pkg.name%>-<%-pkg.version%>.js <%- grunt.template.today("yyyy-mm-dd") %> */\n'
 			},
 			build: {
 				src: 'src/test.js',
-				dest: 'build/<%-pkg.name%>-<%pkg.version%>.js.min.js'
+				dest: 'build/<%-pkg.name%>-<%-pkg.version%>.min.js'
 			} 
 		},
 		jshint:{
